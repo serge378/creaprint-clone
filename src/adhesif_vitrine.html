@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/css/output.css" rel="stylesheet" />
+    <link href="/dist/css/caroussel.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b280691a77.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Adhesif vitrine</title>
+  </head>
+  <body>
+    <button
+      type="button"
+      class="fixed hidden bottom-3 right-3 font-bold w-16 text-2xl h-16 rounded-full border-2 border-gray text-gray hover:bg-white duration-300"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <header class="px-12 py-5 bg-gray">
+      <div class="flex justify-between items-center">
+        <p
+          class="bg-purple py-2 text-yellow px-6 rounded-sm sm:hidden md:block"
+        >
+          <span>01 41 27 27 37</span>
+          <i class="fa-solid fa-phone"></i>
+        </p>
+        <p>
+          <a href="/src/index.html">
+            <img
+              src="https://creaprint-france.fr/wp-content/uploads/2018/02/Impression-num%C3%A9rique-Creaprint-2.png"
+              class="logo"
+              alt=""
+            />
+          </a>
+        </p>
+        <p
+          class="bg-purple py-2 text-yellow px-6 rounded-sm sm:hidden md:block hover:bg-white cursor-pointer duration-300"
+        >
+          <span>Nous localiser</span>
+          <i class="fa-solid fa-map"></i>
+        </p>
+      </div>
+      <nav class="sm:hidden md:block">
+        <ul class="flex justify-between mt-5 text-white">
+          <li class="text-purple underline-offset-4 underline text-2xl">
+            <a href="/src/adhesif_vitrine.html">Adhesif vitrine</a>
+          </li>
+          <li
+            class="hover:text-purple hover:underline-offset-4 hover:underline duration-150 text-2xl"
+          >
+            <a href="/src/covering_voiture.html">Covering voiture</a>
+          </li>
+          <li
+            class="hover:text-purple hover:underline-offset-4 hover:underline duration-150 text-2xl"
+          >
+            <a href="/src/scenographie.html">scenographie</a>
+          </li>
+          <li
+            class="hover:text-purple hover:underline-offset-4 hover:underline duration-150 text-2xl"
+          >
+            <a href="/src/caisson_lumineux.html">Caisson lumineux</a>
+          </li>
+          <li
+            class="hover:text-purple hover:underline-offset-4 hover:underline duration-150 text-2xl"
+          >
+            <a href="">Realisations</a>
+          </li>
+          <li
+            class="hover:text-purple hover:underline-offset-4 hover:underline duration-150 text-2xl"
+          >
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="bg-hero-pattern-adhesif_vitrine h-80 bg-center bg-no-repeat justify-center flex items-center"
+      >
+        <p
+          class="text-4xl bg-opacity-10 bg-black w-full text-center text-white"
+        >
+          ADHÉSIF VITRINE
+        </p>
+      </div>
+      <section class="px-16">
+        <h1 class="font-semibold text-3xl text-center my-8">
+          Créaprint : adhésifs pour vitrines
+        </h1>
+        <div
+          class="flex md:space-x-5 sm:flex-col md:flex-row text-justify text-gray"
+        >
+          <div class="space-y-7">
+            <p>
+              La publicité adhésive sur vos vitrines est la solution idéale pour
+              habiller vos devantures de magasins, cette solution vous permet de
+              communiquer et d’attirer l’attention des clients sur vos offres
+              (vos produits ou services), vos heures d’ouverture, vos promotions
+              et soldes, vos coordonnées téléphoniques, etc. Le marquage adhésif
+              pour vitrine est incontournable aujourd’hui, car il joue un rôle
+              aussi important que l’enseigne de magasin. Obtenez ou renouvelez
+              le vôtre dès aujourd’hui en nous contactant.
+            </p>
+            <p>
+              Nos adhésifs vitrine vous offrent une solution attrayante,
+              originale et innovante à vos besoins de communication visuelle.
+              Nos équipes d’experts vous offrent un service sur mesure pour vous
+              aider à tirer le meilleur parti de vos vitrines.
+            </p>
+          </div>
+          <div class="space-y-7">
+            <p>
+              Que vous ayez besoin de marquage adhésif éphémère ou permanent,
+              pour communiquer sur des événements, des informations pratiques ou
+              bien pour présenter votre métier, vous pouvez faire confiance à
+              notre équipe de graphistes expérimentés.
+            </p>
+            <p>
+              Nos solutions d’adhésif vitrine sont disponibles dans tous les
+              formats, faciles à installer, ne dégradent pas vos vitrines,
+              possèdent une bonne durabilité, résistent très bien aux aléas
+              climatiques, et nous les adaptons à tout type d’établissement.
+              Contactez-nous dès aujourd’hui et profitez également d’une
+              communication gratuite (puisque la vitrine vous appartient),
+              efficace (puisqu’elle est visible 24 h/24) et qui ne tardera pas à
+              augmenter votre trafic.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="container">
+        <div id="toggleContainer" class="hidden">
+          <label>Carousel</label>
+          <div id="toggle">
+            <div id="outer3">
+              <div id="slider3"></div>
+            </div>
+            <label>Tiles</label>
+          </div>
+        </div>
+        <div id="galleryView">
+          <div id="galleryContainer">
+            <div id="leftView"></div>
+            <button id="navLeft" class="navBtns">
+              <i class="fas fa-arrow-left fa-3x"></i>
+            </button>
+            <a id="linkTag">
+              <div id="mainView"></div>
+            </a>
+            <div id="rightView"></div>
+            <button id="navRight" class="navBtns">
+              <i class="fas fa-arrow-right fa-3x"></i>
+            </button>
+          </div>
+        </div>
+        <div id="tilesView">
+          <div id="tilesContainer"></div>
+        </div>
+      </section>
+      <section class="px-16">
+        <h1 class="my-5 text-4xl text-center">
+          Les solutions de marquage adhésif pour vitrine
+        </h1>
+        <p class="text-center text-gray text-2xl">
+          Il existe un grand nombre de possibilités d’utiliser la publicité
+          adhésive sur vos vitrines.
+        </p>
+        <p class="text-center text-gray text-2xl">
+          Vous avez le choix entre une multitude de supports :
+        </p>
+        <div class="grid gap-4 grid-cols-3 grid-rows-3 mt-10">
+          <div>
+            <h1 class="text-xl font-bold mb-3">Adhésifs polymères</h1>
+            <p class="text-justify text-gray">
+              Ils sont très originaux et très sollicités pour la publicité
+              adhésive. Ils s’appliquent sur toutes les formes de vitrine, et
+              vous permettent de communiquer sur une large étendue de vitrine
+              sans entraver la visibilité de votre établissement. On l’appelle
+              également le one-way vision, puisqu’il permet aux passants de voir
+              la publicité de l’extérieur, et aux employés et clients à
+              l’intérieur de l’établissement de voir normalement l’extérieur.
+            </p>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold mb-3">Adhésifs micro-perforés</h1>
+            <p class="text-justify text-gray">
+              Ils sont très originaux et très sollicités pour la publicité
+              adhésive. Ils s’appliquent sur toutes les formes de vitrine, et
+              vous permettent de communiquer sur une large étendue de vitrine
+              sans entraver la visibilité de votre établissement. On l’appelle
+              également le one-way vision, puisqu’il permet aux passants de voir
+              la publicité de l’extérieur, et aux employés et clients à
+              l’intérieur de l’établissement de voir normalement l’extérieur.
+            </p>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold mb-3">La vitrophanie</h1>
+            <p class="text-justify text-gray">
+              La vitrophanie est un type d’adhésifs pour vitrine qui se collent
+              à l’intérieur et se voient de l’extérieur ; la vitrophanie est
+              composée d’un film support transparent ou opaque, imprimé en
+              sérigraphie ou en impression numérique grand format, sur la partie
+              visible de l’adhésif.
+            </p>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold mb-3">Adhésifs monomères</h1>
+            <p class="text-justify text-gray">
+              Ce sont des supports d’adhésif pour vitrine très bon marché et
+              pouvant durer jusqu’à 3 ans. Il est recommandé de les utiliser à
+              l’intérieur et sur des surfaces planes uniquement.
+            </p>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold mb-3">Adhésif dépoli</h1>
+            <p class="text-justify text-gray">
+              Il s’agit de marquages adhésifs qui donnent un air de verre givré
+              aux vitrines. Ils sont excellents pour préserver votre intimité
+              sans empêcher la lumière de pénétrer à l’intérieur des pièces ;
+            </p>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold mb-3">Adhésifs fluorescents</h1>
+            <p class="text-justify text-gray">
+              Très innovants et originaux pour la publicité adhésive, ces
+              adhésifs se voient de loin et attirent facilement les regards des
+              passants. Ils sont parfaits pour communiquer sur des promotions,
+              des soldes et autres événements.
+            </p>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold mb-3">Adhésifs avec colle amovible</h1>
+            <p class="text-justify text-gray">
+              Ces supports sont enlevés à la fin d’une opération précise. Ce
+              sont des marquages adhésifs idéaux pour les communications
+              événementielles ou de courte durée, telles que les soldes, les
+              promotions, l’annonce de nouveaux produits, etc.
+            </p>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold mb-3">Stickers vitrine</h1>
+            <p class="text-justify text-gray">
+              Les stickers sont des autocollants personnalisés en matière
+              plastique souple avec une surface adhésive. Ils sont pratiques
+              afin faire la promotion et communiquer sur vos produits et
+              services. Un sticker est fait pour durer, c’est pourquoi sa
+              conception polymère permet de résister aux intempéries et se
+              surface collante résiste au UV et à l’humidité.
+            </p>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold mb-3">Lettrage adhésif</h1>
+            <p class="text-justify text-gray">
+              Très économique, les adhésifs transparents de couleur pour donner
+              un air frais, animé et dynamique à votre intérieur, ou encore le
+              yupo tako qui adhère sans colle et ne laisse pas de trace sur les
+              vitrines.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="px-16 flex flex-col bg-section_gray pt-10">
+        <h1 class="text-center font-semibold text-3xl">
+          Une pose d’adhésif vitrine efficace !
+        </h1>
+        <p class="my-10 text-gray">
+          Dans l’Agence de communication visuelle Créaprint, notre équipe est
+          spécialisée dans la pose d’adhésif vitrine. Nos experts sont de
+          véritables techniciens dans le domaine de la pose d’adhésif. Nous nous
+          chargeons de tout, allant de la conception à la pose de votre
+          publicité adhésive, vous obtiendrez un résultat aussi efficace que
+          réussit.
+        </p>
+        <h2 class="text-center text-2xl">
+          La pose d’adhésif de vitrine se déroule en suivant ces différentes
+          étapes :
+        </h2>
+        <ol class="list-decimal my-10">
+          <li>Protection et sécurisation de l’espace de travail</li>
+          <li>
+            Nettoyage du vitrage ou de la surface avec un grattoir, lorsque la
+            surface est plane ou uniquement avec des produits nettoyants sur des
+            surfaces courbes et délicates comme les carrosseries. Essuyage de
+            l’encadrement avec du papier essuie-tout.
+          </li>
+          <li>
+            Prise de repères par les techniciens Lorsqu’il y a plusieurs visuels
+            à aligner sur les vitres, grâce au mètre et au niveau laser, pour
+            s’assurer de la concordance exacte entre toutes les vitres.
+          </li>
+          <li>
+            Enlèvement du papier cristal (glassine) et positionnent l’adhésif.
+          </li>
+          <li>
+            Mise en place de l’adhésif, puis marouflage avec la raclette du
+            centre vers l’extérieur en commençant par le haut.
+          </li>
+          <li>Finitions et contrôle</li>
+          <li>Nettoyage de l’espace de travail</li>
+        </ol>
+      </section>
+      <section class="flex flex-col px-20 bg-purple_light pb-8">
+        <p class="text-3xl my-10 text-center text-white">
+          Impression et pose d’adhésif vitrine ? Contactez-nous
+        </p>
+
+        <form action="." method="post" class="flex flex-col space-y-2">
+          <input
+            type="text"
+            class="h-10 p-4 text-xl rounded-sm"
+            placeholder="Nom ou societe"
+          />
+          <input
+            type="email"
+            class="h-10 p-4 text-xl rounded-sm"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            type="tel"
+            class="h-10 p-4 text-xl rounded-sm"
+            name="tel"
+            placeholder="Telephone"
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="4"
+            placeholder="Message"
+            aria-setsize="none"
+            class="resize-none p-4 text-xl rounded-sm"
+          ></textarea>
+          <button
+            type="submit"
+            class="p-2 mt-2 text-xl font-bold text-white bg-send_btn rounded-sm"
+          >
+            Envoi
+          </button>
+        </form>
+      </section>
+
+      <section class="px-20 pt-10 pb-8 bg-gray_strong">
+        <div
+          class="flex justify-between sm:flex-col md:flex-row sm:space-y-4 sm:items-center"
+        >
+          <a href="" class="text-2xl text-gray hover:text-white duration-300"
+            >Adhésif vitrine Paris</a
+          >
+          <p>
+            <a href="">
+              <img
+                src="https://creaprint-france.fr/wp-content/uploads/2018/02/Impression-num%C3%A9rique-Creaprint-2.png"
+                class="logo"
+                width="375"
+                height="45"
+                alt=""
+              />
+            </a>
+          </p>
+          <a href="" class="text-2xl text-gray hover:text-white duration-300"
+            >Vitrophanie Paris</a
+          >
+        </div>
+        <p class="text-center my-5">
+          <a href="" class="text-2xl text-gray hover:text-white duration-300"
+            >Impression Numérique Grand format</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer class="flex justify-between bg-gray_footer px-20 h-24 items-center">
+      <p>
+        <a href="" class="text-2xl text-white">Plan de site</a>
+      </p>
+      <div class="space-x-5 flex justify-center">
+        <a href=""
+          ><div
+            class="bg-white rounded-full w-14 flex items-center text-xl justify-center h-14"
+          >
+            <i class="fa-brands fa-twitter"></i></div
+        ></a>
+        <a href=""
+          ><div
+            class="bg-white rounded-full w-14 flex items-center text-xl justify-center h-14"
+          >
+            <i class="fa-brands fa-facebook-f"></i></div
+        ></a>
+        <a href=""
+          ><div
+            class="bg-white rounded-full w-14 flex items-center text-xl justify-center h-14"
+          >
+            <i class="fa-brands fa-linkedin"></i></div
+        ></a>
+      </div>
+      <p>
+        <a href="" class="text-2xl text-white">Mentions legales</a>
+      </p>
+    </footer>
+
+    <script src="/dist/js/caroussel.js"></script>
+    <script src="/dist/js/goToTop.js"></script>
+  </body>
+</html>
